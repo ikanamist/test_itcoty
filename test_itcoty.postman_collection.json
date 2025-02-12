@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "31625b73-e086-4233-8685-4efcaf5bc581",
+		"name": "test_itcoty",
+		"description": "API for creation users with Flask and MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42150308"
+	},
+	"item": [
+		{
+			"name": "Server_test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/"
+			},
+			"response": []
+		},
+		{
+			"name": "User_creation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"testuser\",\r\n  \"email\": \"test@example.com\",\r\n  \"password\": \"mypassword\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/users"
+			},
+			"response": []
+		}
+	]
+}
